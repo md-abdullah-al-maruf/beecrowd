@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    int b;
+    char a[501];
+    gets(a);
+    b=strlen(a);
+    if(b<=140){
+        printf("TWEET\n");
+    }
+    else{
+        printf("MUTE\n");
+    }
+    return 0;
+}
