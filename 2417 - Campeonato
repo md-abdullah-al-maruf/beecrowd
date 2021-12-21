@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main()
+{
+    int cw,cd,cg,fw,fd,fg,cp,fp;
+    scanf("%d%d%d%d%d%d",&cw,&cd,&cg,&fw,&fd,&fg);
+    cw=cw*3;
+    cp=cw+cd;
+    fw=fw*3;
+    fp=fw+fd;
+    if(cp==fp){
+        if(cg<fg){
+            printf("F\n");
+        }
+        else if(cg>fg){
+            printf("C\n");
+        }
+        else{
+            printf("=\n");
+        }
+    }
+    if(cp>fp){
+        printf("C\n");
+    }
+    else if(cp<fp){
+        printf("F\n");
+    }
+    return 0;
+}
