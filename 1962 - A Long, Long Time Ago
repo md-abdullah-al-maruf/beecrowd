@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main()
+{
+    int a,i;
+    long long int b,c;
+    scanf("%d",&a);
+    for(i=0;i<a;i++){
+        scanf("%lld",&b);
+        if(b>=2015){
+                if(b==2015){
+                    c=1;
+                }
+                else{
+                    c=b-2015+1;
+                }
+            printf("%lld A.C.\n",c);
+        }
+        else{
+            c=2015-b;
+            printf("%lld D.C.\n",c);
+        }
+        c=0;
+        b=0;
+    }
+    return 0;
+}
+
