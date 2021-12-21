@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main()
+{
+    long long int a,b;
+    scanf("%lld%lld",&a,&b);
+    if((a>=3&&a<=1000000)&&(b>=1&&b<=4000)){
+    printf("%lld\n",a*b);
+    }
+    return 0;
+}
